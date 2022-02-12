@@ -4,41 +4,59 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>BarberShop module-01</title>
+      <title>BarberShop solo practics</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="./css/styles.css" />
    </head>
    <body>
       <!-- Header Section -->
-      <header>
-         <a href="./index.html">
+      <header class="header">
+         <a class="logo" href="./index.html">
             <img src="./images/Logo.svg" alt="Лого" width="68" height="55" />
          </a>
-         <nav>
-            <ul>
-               <li><a href="">О нас</a></li>
-               <li><a href="">Услуги и цены</a></li>
-               <li><a href="">Мастера</a></li>
-               <li><a href="">Контакты</a></li>
+         <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item"><a class="nav-link link" href="">О нас</a></li>
+               <li class="nav-item"><a class="nav-link link" href="">Услуги и цены</a></li>
+               <li class="nav-item"><a class="nav-link link" href="">Мастера</a></li>
+               <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
             </ul>
          </nav>
-         <a href="tel:+380441111111">+38 044 111 11 11</a>
-         <button type="button">онлайн-запись</button>
+         <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
+         <button class="button btn-mode-dark" type="button">онлайн-запись</button>
       </header>
       <!-- Main Section -->
       <main>
          <!-- Hero Section -->
-         <section>
-            <a href="">Youtube</a>
-            <a href="">Instagram</a>
+         <section class="hero">
+            <ul class="hero-social-list list">
+               <li><a class="social link" href="">Youtube</a></li>
+               <li><a class="social link" href="">Instagram</a></li>
+            </ul>
 
-            <p lang="en">A hair salon for men in Kyiv</p>
-            <h1 lang="en">BarberShop</h1>
-            <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-
-            <button type="button">Назад</button>
-            <button type="button">Вперед</button>
+            <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title" lang="en">BarberShop</h1>
+            <p class="subtitle sub-title-mode-dark">
+               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            </p>
+            <ul class="hero-slide-list list">
+               <li class="hero-slide-item">
+                  <button class="button slide-btn-disable" type="button">Назад</button>
+               </li>
+               <li class="hero-slide-item">
+                  <button class="button" type="button slide-btn">Вперед</button>
+               </li>
+            </ul>
          </section>
          <!-- About Us Section -->
-         <section>
+         <section class="about">
             <ul>
                <li>
                   <img

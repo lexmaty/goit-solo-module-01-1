@@ -1,0 +1,16 @@
+:root {
+   --main-font-txt: 'Open Sans', sans-serif;
+   --secondary-font-txt: 'Raleway', sans-serif;
+}
+
+body {
+   font-family: var(--main-font-txt);
+}
+
+.link {
+   text-decoration: none;
+}
+
+.list {
+   list-style: none;
+}
