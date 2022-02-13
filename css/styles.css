@@ -1,10 +1,44 @@
 :root {
+   /* Fonts Family */
    --main-font-txt: 'Open Sans', sans-serif;
    --secondary-font-txt: 'Raleway', sans-serif;
+   /* Colors */
+   --accent-cl: #ff6c00;
+   /* Light Mode Txt */
+   --primary-txt-mode-light: #555555;
+   --secondary-txt-mode-light: #303030;
+   /* Dark Mode Txt */
+   --primary-txt-mode-dark: #ffffff;
+   --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
+   --main-txt--mode-dark: #9da4bd;
+   /* Light Mode Bg */
+   --primary-bg--mode-light: #ffffff;
+   --secondary-bg-mode-light: #f7f7f7;
+   /* Dark Mode Bg */
+   --primary-bg-mode-dark: #191c26;
+   --secondary-bg-mode-dark: #111319;
 }
 
 body {
    font-family: var(--main-font-txt);
+   font-size: 18px;
+   line-height: 1.67;
+   letter-spacing: 0.02em;
+
+   color: var(--primary-txt-mode-light);
+}
+
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
 }
 
 .link {
@@ -13,4 +47,29 @@ body {
 
 .list {
    list-style: none;
+}
+
+.button {
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+
+   background-color: transparent;
+   cursor: pointer;
+}
+
+/* Header */
+.header {
+   background-color: var(--primary-bg-mode-dark);
+}
+.nav-link {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.1em;
+
+   color: var(--primary-txt-mode-dark);
 }
